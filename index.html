@@ -4,47 +4,109 @@
 
 <head>
 
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <title>My Website</title>
+  <title>Đăng nhập/Đăng kí</title>
+
+  <style>
+
+  @media only screen and (max-width: 600px) {
+
+  /* CSS code for mobile screens here */
+
+}
+
+    /* CSS code here */
+
+    body {
+
+  background-color: #f1f1f1;
+
+}
+
+.container {
+
+  margin: auto;
+
+  width: 80%;
+
+  padding: 10px;
+
+  border: 1px solid #ccc;
+
+  background-color: white;
+
+}
+
+input[type=text], input[type=password] {
+
+  width: 100%;
+
+  padding: 12px 20px;
+
+  margin: 8px 0;
+
+  display: inline-block;
+
+  border: 1px solid #ccc;
+
+  box-sizing: border-box;
+
+}
+
+button {
+
+  background-color: #4CAF50;
+
+  color: white;
+
+  padding: 14px 20px;
+
+  margin: 8px 0;
+
+  border: none;
+
+  cursor: pointer;
+
+  width: 100%;
+
+}
+
+button:hover {
+
+  opacity: 0.8;
+
+}
+
+}
+
+  </style>
 
 </head>
 
 <body>
 
-    <header>
+  <div class="container">
 
-        <h1>Welcome to My Website!</h1>
+    <h2>Đăng nhập/Đăng kí</h2>
 
-        <nav>
+    <form method="post" action="process.php">
 
-            <ul>
+      <label for="username"><b>Tên đăng nhập</b></label>
 
-                <li><a href="#">Home</a></li>
+      <input type="text" placeholder="Nhập tên đăng nhập" name="username" required>
 
-                <li><a href="#">About Us</a></li>
+      <label for="password"><b>Mật khẩu</b></label>
 
-                <li><a href="#">Contact Us</a></li>
+      <input type="password" placeholder="Nhập mật khẩu" name="password" required>
 
-            </ul>
+      <button type="submit" name="login">Đăng nhập</button>
 
-        </nav>
+      <button type="submit" name="register">Đăng kí</button>
 
-    </header>
+    </form>
 
-    <main>
-
-        <h2>About Us</h2>
-
-        <p>We are a small startup company based in San Francisco. Our mission is to create innovative solutions to address some of the world's biggest challenges.</p>
-
-    </main>
-
-    <footer>
-
-        <p>&copy; 2021 My Website</p>
-
-    </footer>
+  </div>
 
 </body>
 
